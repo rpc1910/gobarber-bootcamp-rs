@@ -4,7 +4,6 @@ import User from '@modules/users/infra/typeorm/entities/User';
 import AppError from '@shared/errors/AppError';
 import IUsersRepository from '../repositories/IUsersRepository';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
-import passwordRouter from '../infra/http/routes/password.routes';
 
 interface IRequest {
   user_id: string;
