@@ -7,7 +7,7 @@ export default class AppointmentsController {
   public async create(request: Request, response: Response): Promise<Response> {
     const user_id = request.user.id;
     const { provider_id, date } = request.body;
-    const parsedDate = parseISO(date);
+    const parsedDate = date instanceof Date ? date : parseISO(date);
 
     const createAppointmentService = container.resolve(
       CreateAppointmentService,
