@@ -1,5 +1,5 @@
 module.exports = {
-  projet: {
+  project: {
     ios: {},
     android: {},
   },
