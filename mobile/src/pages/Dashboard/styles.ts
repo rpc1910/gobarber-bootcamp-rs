@@ -14,10 +14,7 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: ${Platform.select({
-    android: 24,
-    ios: getStatusBarHeight() + 24,
-  })}px;
+  padding-top: ${getStatusBarHeight() + 24}px;
 `;
 
 export const HeaderTitle = styled.Text`
